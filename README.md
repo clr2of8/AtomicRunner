@@ -26,6 +26,8 @@ Update the paths in the scripts to match your configuration. The scripts script 
 
 ## Create the initial schedule
 
+An example schedule is provided in this repo (AtomicRunnerSchedule.csv) but it only has two tests listed. If you want a full schedule you can delete this file and create a full schdule as follows.
+
 Import the Invoke-AtomicRunner script, and call the Get-NewSchedule function.
 
 ```powershell
