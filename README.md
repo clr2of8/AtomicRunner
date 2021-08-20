@@ -70,3 +70,9 @@ You can temporily disable the script automation by placing a file called `stop.t
 ## Logging
 
 All the output from the atomics and the runner automation can be found in the scripts directory in a file called `all-out.txt`. Output from the Invoke-AtomicRunner script itself (not the atomics) is found in `log.txt`
+
+
+# Authors
+
+* Carrie Roberts twitter:@OrOneEqualsOne GitHub:clr2of8
+* Daniel White GitHub: dwhite9
