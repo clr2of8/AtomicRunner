@@ -24,7 +24,7 @@ A scheduled task/cronjob is used to call the Kickoff-AtomicRunner.ps1 script, wh
 
 Update the paths in the scripts to match your configuration. The script assumes that Atomic Red Team is installed to the default directory and that these runner scripts are at C:\Users\art\AtomicRunner or /Users/art/AtomicRunner.
 
-## Create the initial schedule
+### Create the initial schedule
 
 An example schedule is provided in this repo (AtomicRunnerSchedule.csv) but it only has two tests listed. If you want a full schedule you can delete this file and create a full schedule as follows.
 
@@ -36,7 +36,7 @@ Get-NewSchedule("C:\AtomicRedTeam\atomics")
 
 Now configure the AtomicRunnerSchedule.csv file by marking the ones you want to run as active (TRUE) or disabled (FALSE). You can also add input arguments and notes as to why you are or are not including certain atomic tests.
 
-## Get the Prereqs
+### Get the Prereqs
 
 Some tests require additional files in order to run successfully. You can run the automated "get_prereq_command" for all the atomics on your schedule at once using the following.
 
@@ -46,7 +46,7 @@ Invoke-AtomicRunner -GetPrereqs
 
 Prereqs are designed to persist through the execution and cleanup of each atomic test so you should only have to get the prerequisites once before kicking off the runner script for your continuous automation.
 
-## Admin Credentials (Windows Only)
+### Admin Credentials (Windows Only)
 
 Credentials for a user in the adminstrators group is required to rename the host. These credentials need to be provided in encrypted form in the same directory as these scripts in a file called `psc.txt`. You can create such a file with the following command:
 
@@ -82,7 +82,7 @@ You can temporily disable the script automation by placing a file called `stop.t
 All the output from the atomics and the runner automation can be found in the scripts directory in a file called `all-out.txt`. Output from the Invoke-AtomicRunner script itself (not the atomics) is found in `log.txt`
 
 
-# Authors
+## Authors
 
 * Carrie Roberts twitter:@OrOneEqualsOne GitHub:clr2of8
 * Daniel White GitHub:dwhite9
