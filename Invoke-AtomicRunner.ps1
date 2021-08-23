@@ -1,5 +1,6 @@
 # Authors: Carrie Roberts twitter:@OrOneEqualsOne GitHub:clr2of8
 #          Daniel White GitHub: dwhite9
+#          Laken Harrell GitHub:Andras32
 # GitHub Repository: https://github.com/clr2of8/AtomicRunner
 function Invoke-AtomicRunner {
     [CmdletBinding(
