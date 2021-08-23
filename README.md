@@ -22,7 +22,7 @@ A scheduled task/cronjob is used to call the Kickoff-AtomicRunner.ps1 script, wh
 
 ## Initial Setup
 
-Update the paths in the scripts to match your configuration. The scripts script assumes that Atomic Red Team is installed to the default directory and that these runner scripts are at C:\Users\art\AtomicRunner or /Users/art/AtomicRunner.
+Update the paths in the scripts to match your configuration. The script assumes that Atomic Red Team is installed to the default directory and that these runner scripts are at C:\Users\art\AtomicRunner or /Users/art/AtomicRunner.
 
 ## Create the initial schedule
 
@@ -35,6 +35,16 @@ Get-NewSchedule("C:\AtomicRedTeam\atomics")
 ```
 
 Now configure the AtomicRunnerSchedule.csv file by marking the ones you want to run as active (TRUE) or disabled (FALSE). You can also add input arguments and notes as to why you are or are not including certain atomic tests.
+
+## Get the Prereqs
+
+Some tests require additional files in order to run successfully. You can run the automated "get_prereq_command" for all the atomics on your schedule at once using the following.
+
+```powershell
+Invoke-AtomicRunner -GetPrereqs
+```
+
+Prereqs are designed to persist through the execution and cleanup of each atomic test so you should only have to get the prerequisites once before kicking off the runner script for your continuous automation.
 
 ## Admin Credentials (Windows Only)
 
