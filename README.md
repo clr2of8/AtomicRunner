@@ -1,6 +1,6 @@
 # AtomicRunner
 
-This repository contains scripts to help you run a configurable list of atomic tests unattended in a way that aids detection development. The script is to designed to run all the tests you have listed in the CSV schedule once per week by default. Before if runs each atomic it appends the atomic test GUID to the end of the hostname. This makes it easier to determine which detections fired from which atomics because the hostname in the detection will include the GUID of the atomic test that was running at the time. The cleanup commands are run after atomic test execution as well.
+This repository contains scripts to help you run a configurable list of atomic tests unattended in a way that aids detection development. The script is to designed to run all the tests you have listed in the CSV schedule once per week by default. Before it runs each atomic it appends the atomic test GUID to the end of the hostname. This makes it easier to determine which detections fired from which atomics because the hostname in the detection will include the GUID of the atomic test that was running at the time. The cleanup commands are run after atomic test execution as well.
 
 This script works for Windows, Linux and MacOS. You need to have PowerShell Core installed on Linux/MacOS to use these scripts
 
