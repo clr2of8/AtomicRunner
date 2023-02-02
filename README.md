@@ -85,8 +85,8 @@ All the output from the atomics and the runner automation can be found in the sc
 ## Authors
 
 |Name|GitHub Username|Twitter Handle|
-|---|---|---|
-|Carrie Roberts|GitHub:clr2of8|@OrOneEqualsOne|
+|:---:|:---:|:---:|
+|Carrie Roberts|clr2of8|@OrOneEqualsOne|
 |Daniel White|dwhite9||
 |Laken Harrell|Andras32||
 |Joe Johnson|jkjohnson||
