@@ -90,4 +90,4 @@ All the output from the atomics and the runner automation can be found in the sc
 |Daniel White|dwhite9||
 |Laken Harrell|Andras32||
 |Joe Johnson|bagelsrgood4me||
-|George Varghese|ge0var|ge0var|
+|George Varghese|ge0var|@ge0var|
