@@ -1,4 +1,4 @@
-# Note: All of this functionality has been built into the Invoke-AtomicRedTeam repository [here](https://github.com/redcanaryco/invoke-atomicredteam/wiki/Continuous-Atomic-Testing) so you should need the code in this repo
+# Note: All of this functionality has been built into the Invoke-AtomicRedTeam repository [here](https://github.com/redcanaryco/invoke-atomicredteam/wiki/Continuous-Atomic-Testing) so you shouldn't need the code in this repo
 
 # AtomicRunner
 
